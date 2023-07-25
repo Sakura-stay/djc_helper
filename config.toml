@@ -102,7 +102,7 @@ scode_list_accept_ask = []
 majieluo_invite_uin_list = []
 
 # 是否弹出支付宝红包活动图片
-enable_alipay_redpacket_v3 = true
+enable_alipay_redpacket_v3 = false
 
 # 心悦相关配置
 [common.xinyue]
@@ -140,7 +140,7 @@ name = "默认账号名-1"
 # by_hand：      手动登录，在skey无效的情况下会弹出活动界面，自行登录后将cookie中uin和skey提取到下面的配置处
 # qr_login：     二维码登录，每次运行时若本地缓存的.skey文件中存储的skey过期了，则弹出登录页面，扫描二维码后将自动更新skey，进行后续操作
 # auto_login：   自动登录，每次运行若本地缓存的.skey文件中存储的skey过期了，根据填写的账密信息，自动登录来获取uin和skey，无需手动操作
-login_mode = "qr_login"
+login_mode = "by_login"
 
 # 是否无法在道聚城绑定dnf，比如被封禁或者是朋友的QQ（主要用于小号，被风控不能注册dnf账号，但是不影响用来当抽卡等活动的工具人）
 cannot_bind_dnf_v2 = false
@@ -200,8 +200,8 @@ uin = "o123456789"
 skey = "@a1b2c3d4e"
 
 # 自动登录需要设置的信息
-account = "123456789"
-password = "使用账号密码自动登录有风险_请理解这个功能到底如何使用你的账号密码后再决定是否使用"
+account = "1678147219"
+password = "Laihui1205."
 
 # 角色绑定相关配置，若不配置，则默认使用道聚城绑定的角色
 [account_configs.bind_role]
@@ -212,7 +212,7 @@ dnf_role_id = "" # 角色ID，不知道时可以填写区服ID，该数值留空
 # 完成《礼包达人》任务所需的手游的名称信息
 [account_configs.mobile_game_role_info]
 # 手游名称: 无/任意手游/剑网3:指尖江湖/和平精英/王者荣耀/QQ飞车手游/天天酷跑/其他任意游戏，可参考djc_biz_list.json获取完整列表
-game_name = "任意手游"
+game_name = "王者荣耀"
 
 # 兑换道具信息，其他奖励信息可查阅utils/reference_data/dnf_exchange_list.json
 [[account_configs.exchange_items]]
@@ -220,14 +220,14 @@ game_name = "任意手游"
 iGoodsId = "753"
 sGoodsName = "装备品级调整箱（5个）"
 # 表示领取几次这个奖励
-count = 2
+count = 0
 
 #[[account_configs.exchange_items]]
 ## 兑换一次疲劳药
 #iGoodsId = "755"
 #sGoodsName = "魔界抗疲劳秘药（10点）"
 ## 下面的1表示领取一次，改成0并保存就是不领取。如果任何人在任何场所问我这个疲劳药怎么取消，我将直接踢出群聊并拉入本工具的黑名单，不论语气如何。
-#count = 1
+#count = 0
 
 # 各功能开关，true表示开启，false表示关闭
 # 示例如下：
